@@ -1,0 +1,68 @@
+
+
+#form {
+    width: 400px;
+    height: 550px;
+    margin-top: 250px;
+    margin-left: 700px;
+    border: 1px solid slategrey;
+}
+
+.text_on_top {
+    text-align: center;
+}
+
+#form {
+    text-align: center;
+}
+
+.input_field{
+    width: 170px;
+    height: 30px;
+    margin: 15px;
+    padding-right: 10px;
+}
+
+.login_option {
+    padding-top: 90px;
+}
+
+.register_option {
+    padding-top: 60px;
+}
+
+.register_input_field{
+    width: 170px;
+    height: 20px;
+    margin: 10px;
+}
+/*
+#login {
+    display: none;
+}
+*/
+#register {
+    display: none;
+}
+
+
+.btn{
+    background-color: #e7e7e7;
+    width: 90px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submit_btn {
+    background-color:burlywood;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+.submit_btn:hover {background-color: cadetblue;}
+
+.other_btn:hover {background-color: darkgray;}
