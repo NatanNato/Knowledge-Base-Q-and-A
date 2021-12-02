@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#create_account").click(function(){
+                $("#login").hide();
+                $("#register").show();
+            });
+            $("#login_account").click(function(){
+                $("#login").show();
+                $("#register").hide();
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="form">
+            <h2 class="text_on_top" style="color:brown">Tiyaqe system</h2>
+
+            <div id="login">
+                <h1 class="text_on_top">Sign in</h1>
+                <form action="#" id="login_form">
+                    <input type="email" placeholder="email" required class="input_field"><br>
+                    <input type="password" placeholder="password" required class="input_field"><br>
+                    <input type='checkbox'class='check-box'><span>Remember Password</span>
+                    <br>
+                    <input type="submit" value="Submit" class="btn submit_btn" style="margin-top: 20px; float: right;">
+                    <br>
+                </form>
+                <div class="login_option">
+                    <span>Don't have an account?</span>
+                    <button class="btn other_btn" id="create_account">Create account</button><br>
+                    <button class="btn other_btn" style="float: left;">Forgot password</button><br>
+                </div>
+            </div>
+
+            <div id="register">
+                <h1 class="text_on_top">Sign up</h1>
+                <form action="#" id="register_form">
+                    <input type="text"  id="fname" name="fname" class="register_input_field" placeholder="First name" required><br>
+                    <input type="text"  id="lname" name="lname" class="register_input_field" placeholder="Last name" required><br>
+                    <input type="email" id="email" name="email" class="register_input_field" placeholder="Email" required><br>
+                    <input type="text"  id="uname" name="uname" class="register_input_field" placeholder="User name" required><br>
+                    <input type="password" id="pwd" name="pwd"  class="register_input_field" placeholder="Password" required><br>
+                    <input type="password" id="pwd2" name="pwd" class="register_input_field" placeholder="Confirm Password" required><br>
+                    <input type='checkbox'class='check-box' required><span>I agree to the terms and conditions</span><br>
+                    <input type="submit" value="Submit" class="btn submit_btn" style="float: right;">
+                </form>
+                <div class="register_option">
+                    <span>Have an account?</span>
+                    <button class="btn other_btn" id="login_account">Sign in</button>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </body>
+</html>
